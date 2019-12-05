@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery 08 - Chaning</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("#p1").css("color","red")
+                  .slideUp(2000)
+                  .slideDown(2000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p id="p1">jQuery is Fun!!!</p>
+    <button id="btn1">Click Me!</button>
+  </body>
+</html>
